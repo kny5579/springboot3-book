@@ -11,6 +11,16 @@ spring:
   h2:
     console:
       enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 클라이언트 id
+            client-secret: 비밀 값
+            scope:
+              - email
+              - profile
 jwt:
   issuer: kny5579@naver.com
   secret_key: study-springboot
